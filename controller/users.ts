@@ -8,7 +8,7 @@ export const setName = (req: Request, res: Response, next: NextFunction) => {
     next();
 }
 
-export const getName = (req: Request, res: Response, next: NextFunction) => {
+export const getName = async (req: Request, res: Response, next: NextFunction) => {
     if (name) {
         res.status(200).json({ name });
     } else {
