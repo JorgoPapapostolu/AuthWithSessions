@@ -1,6 +1,7 @@
 import { Router } from "express";
-import { setName } from "../controller/users";
+import { setName, getName } from "../controller/users";
 
 export const userRouter: Router = Router();
 
 userRouter.get("/setname", setName);
+userRouter.get("/getname", getName);
